@@ -72,6 +72,18 @@ The FastAPI service owns the application rules and exposes the API used by the f
 
 The backend should keep AI-generated results as drafts until the facilitator confirms them, matching the MVP decision in `_docs/plan.md`.
 
+### Authentication
+
+**Decision:** Use username/email and password authentication with JWT tokens using FastAPI's `OAuth2PasswordBearer` pattern. Passwords should be hashed with bcrypt. The MVP will not include email verification, password reset, or external identity providers.
+
+**Why:** This is a local-only MVP, but the person building it wants to practice a real authentication flow rather than a seeded user selector.
+
+**Alternatives considered:**
+
+- Seeded user selector, no password: simpler, but skips the authentication practice that is a deliberate goal here.
+- Session cookies instead of JWT: viable, but JWT fits better given the frontend and backend run as separate origins in local development.
+- External identity providers such as OAuth, Google, or GitHub: unnecessary complexity and an external dependency for a local-only tool.
+
 ### PostgreSQL
 
 PostgreSQL is the main source of truth for structured application data:
