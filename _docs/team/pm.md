@@ -30,3 +30,6 @@ Rules:
 - Do not invent product features that are not in `_docs/plan.md`.
 - Do not change architecture decisions while grooming a task.
 - If something is genuinely ambiguous and cannot be resolved from `_docs/plan.md` or `_docs/architecture.md`, flag it back to the human instead of guessing.
+- Any acceptance criterion describing a running service, endpoint, or UI must include the exact port, URL, or path. Never use vague terms like "reachable" or "accessible" alone.
+- Do not write subjective, unmeasurable adjectives such as lightweight, simple, fast, clean, or robust as acceptance criteria. If it reflects a real project decision already stated in `_docs/architecture.md`, move it to Constraints and reference `_docs/architecture.md` instead of restating it as something to verify.
+- Before finishing, re-read every acceptance criterion and ask: could someone point at a screen or terminal output and answer yes or no using only what is written here, without inferring anything not stated? If no, add the missing concrete detail, such as port, path, exact command, or value, before producing the final result.
