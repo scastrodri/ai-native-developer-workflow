@@ -10,9 +10,13 @@
 6. If `FAIL`, start a new engineer session using the QA feedback as input. Re-implement and repeat QA until it reports `PASS`.
 7. If `PASS`, the task is done. Close the corresponding GitHub issue with a comment referencing the commit(s) that resolved it.
 
+## Roles
+
+- PM: `_docs/team/pm.md`
+
 ## Rules
 
 - Each role runs in its own fresh chat session.
 - Do not reuse a chat session across roles or across tasks.
 - Keep grading and building context separate so QA does not inherit the engineer's assumptions.
-- `_docs/team/pm.md`, `_docs/team/software-engineer.md`, and `_docs/team/qa-engineer.md` do not exist yet. Reference these paths now; create their content in a separate step.
+- `_docs/team/software-engineer.md` and `_docs/team/qa-engineer.md` do not exist yet. Reference these paths now; create their content in a separate step.
