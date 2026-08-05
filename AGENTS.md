@@ -1,5 +1,9 @@
 # Agent Instructions
 
+## Documents
+
+- `_docs/process.md` - how work is organized
+
 ## Commands
 
 - `cd backend && uv sync` - install backend dependencies
