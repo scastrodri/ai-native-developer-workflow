@@ -8,15 +8,16 @@
 4. The QA role checks the finished work against the original issue and acceptance criteria in a separate fresh chat session from the engineer who wrote it. Follow `_docs/team/qa-engineer.md`.
 5. QA reports `PASS` or `FAIL` with evidence.
 6. If `FAIL`, start a new engineer session using the QA feedback as input. Re-implement and repeat QA until it reports `PASS`.
-7. If `PASS`, the task is done. Close the corresponding GitHub issue with a comment referencing the commit(s) that resolved it.
+7. If `PASS`, the task is done. The human closes the corresponding GitHub issue with a comment referencing the commit(s) that resolved it. Neither the Engineer nor QA closes issues - see their respective role files.
 
 ## Roles
 
 - PM: `_docs/team/pm.md`
+- Engineer: `_docs/team/software-engineer.md`
 
 ## Rules
 
 - Each role runs in its own fresh chat session.
 - Do not reuse a chat session across roles or across tasks.
 - Keep grading and building context separate so QA does not inherit the engineer's assumptions.
-- `_docs/team/software-engineer.md` and `_docs/team/qa-engineer.md` do not exist yet. Reference these paths now; create their content in a separate step.
+- `_docs/team/qa-engineer.md` does not exist yet. Reference this path now; create its content in a separate step.
