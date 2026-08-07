@@ -20,4 +20,5 @@
 - Each role runs in its own fresh chat session.
 - Do not reuse a chat session across roles or across tasks.
 - Keep grading and building context separate so QA does not inherit the engineer's assumptions.
+- In Cursor, the agent will not commit without an explicit human request in the prompt, even if a role file says to commit. When invoking the Engineer role, the human's instruction must explicitly authorize committing, for example "Implement issue #2 and commit when done", or the commit step will be skipped.
 - `_docs/team/qa-engineer.md` does not exist yet. Reference this path now; create its content in a separate step.
