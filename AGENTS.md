@@ -20,3 +20,4 @@
 - Dependencies are added in `backend/pyproject.toml` for the backend or `frontend/package.json` for the frontend. Do not add one without asking.
 - Use `_docs/architecture.md` as the source of truth for the selected stack, pinned service versions, and local-first Docker Compose direction.
 - Keep the project local-first. Do not add cloud infrastructure, managed services, or external identity providers unless the project direction changes.
+- Use Conventional Commits format for commit messages (`feat`, `fix`, `docs`, `chore`, `refactor`, `test`), matching the convention already used in this repository's history.
