@@ -13,6 +13,8 @@
 - `cd frontend && npm test` - run the whole frontend test suite
 - `cd frontend && npm test -- src/App.test.tsx` - run one frontend test file
 - `cd frontend && npm run build` - type-check and build the frontend
+- `docker compose up --build` - build and start the backend and frontend app containers
+- `docker compose down` - stop the Docker Compose app containers
 
 ## Rules
 
